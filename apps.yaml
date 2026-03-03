@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: t03
+  namespace: kwd30084
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io/background
+    - resources-finalizer.argocd.argoproj.io/foreground
+spec:
+  project: kwd30084
+  destination:
+    name: argus
+    namespace: kwd30084
+  source:
+    path: apps
+    repoURL: https://github.com/kgabor/t03-deployment
+    targetRevision: main
+    helm:
+      version: v3
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
