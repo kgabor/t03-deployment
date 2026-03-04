@@ -13,7 +13,7 @@ spec:
     namespace: kwd30084
   source:
     path: apps
-    repoURL: https://github.com/kgabor/t03-deployment
+    repoURL: git@github.com:kgabor/t03-deployment
     targetRevision: main
     helm:
       version: v3

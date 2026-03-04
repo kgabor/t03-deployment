@@ -13,7 +13,7 @@ destination:
   name: argus
   namespace: kwd30084
 source:
-  repoURL: https://github.com/kgabor/t03-services
+  repoURL: https://github.com/kgabor/t03-services.git
   targetRevision: main
 
 services:
