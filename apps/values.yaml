@@ -30,3 +30,6 @@ services:
   bl03t-mo-sim-01:
     enabled: true
     targetRevision: main
+  bl03t-di-cam-01:
+    enabled: true
+    targetRevision: main
