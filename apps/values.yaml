@@ -27,3 +27,6 @@ services:
   t03-epics-pvcs:
   t03-epics-opis:
   t03-epics-gateways:
+  bl03t-mo-sim-01:
+    enabled: true
+    targetRevision: main
